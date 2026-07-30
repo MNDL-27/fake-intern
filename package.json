@@ -1,5 +1,5 @@
 {
-  "name": "fake-intern-reporter",
+  "name": "fake-intern",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
     "db:generate": "prisma generate",
     "postinstall": "prisma generate",
     "pages:build": "next-on-pages",
-    "pages:deploy": "npm run pages:build && wrangler pages deploy .vercel/output --project-name=fake-intern-reporter"
+    "pages:deploy": "npm run pages:build && wrangler pages deploy .vercel/output --project-name=fake-intern"
   },
   "allowScripts": {
     "@prisma/client@5.22.0": true,

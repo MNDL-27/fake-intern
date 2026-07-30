@@ -1,6 +1,6 @@
-# Fake Internship Reporter
+# Fake Intern
 
-**Fake Internship Reporter** is an open-source platform built to expose training mills and fake internship rackets that scam Indian job seekers. Built for deployment on Cloudflare Pages/Workers using Next.js and Cloudflare D1.
+**Fake Intern** is an open-source platform built to expose training mills and fake internship rackets that scam Indian job seekers. Built for deployment on Cloudflare Pages/Workers using Next.js and Cloudflare D1.
 
 ## The Problem
 Approximately 93% of Indian job seekers encounter fake employment prospects. Training mills masquerade as legitimate companies or MNC brand partners, charging upfront "training" or "certification" fees (ranging from ₹1,000 to ₹5,000+) while promising stipends or jobs that never materialize.
