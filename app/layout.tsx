@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Fake Internship Reporter — Is this internship real?",
   description: "Check reports from other students before you apply. Search any company to see if they charge fees, brand-jack, or run fake internships.",
-  metadataBase: process.env.NEXT_PUBLIC_SITE_URL ? new URL(process.env.NEXT_PUBLIC_SITE_URL) : null,
+  metadataBase: process.env.NEXT_PUBLIC_SITE_URL ? new URL(process.env.NEXT_PUBLIC_SITE_URL) : undefined,
   alternates: {
     canonical: "/",
   },
@@ -27,7 +27,7 @@ export default function RootLayout({
               "@type": "WebSite",
               name: "Fake Internship Reporter",
               description: "Check reports from other students before you apply. Search any company to see if they charge fees, brand-jack, or run fake internships.",
-              url: process.env.NEXT_PUBLIC_SITE_URL || "https://fake-internship-reporter.pages.dev",
+              url: process.env.NEXT_PUBLIC_SITE_URL || undefined,
             }),
           }}
         />

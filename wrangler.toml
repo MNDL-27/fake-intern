@@ -2,7 +2,3 @@ name = "fake-intern"
 main = ".vercel/output/static/_worker.js/index.js"
 compatibility_date = "2025-07-30"
 compatibility_flags = ["nodejs_compat"]
-
-[vars]
-CF_PAGES = "1"
-SITE_URL = "https://fakeintern.protik.eu.org"
