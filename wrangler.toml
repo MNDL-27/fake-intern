@@ -1,0 +1,13 @@
+name = "fake-intern-reporter"
+main = ".vercel/output/functions/_worker.js"
+compatibility_date = "2025-07-30"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "fake-intern-db"
+database_id = "fake-intern-db-dev"
+
+[vars]
+CF_PAGES = "1"
+SITE_URL = "https://fakeintern.protik.eu.org"

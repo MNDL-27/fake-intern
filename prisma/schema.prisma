@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+  output = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Company {
+  id             String   @id @default(uuid())
+  slug           String   @unique
+  name           String
+  domainAgeDays  Int?
+  mcaRegistered  Boolean?
+  createdAt      DateTime @default(now())
+  reports        Report[]
+}
+
+model Report {
+  id             String   @id @default(uuid())
+  companyId      String
+  company        Company @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  title          String
+  body           String
+  feeAmount      Int?
+  feeCharged     Boolean @default(false)
+  brandJacking   Boolean @default(false)
+  author         String  @default("anonymous")
+  createdAt      DateTime @default(now())
+  website        String?
+}

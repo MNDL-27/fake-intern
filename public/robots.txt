@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fake-internship-reporter.pages.dev/sitemap.xml

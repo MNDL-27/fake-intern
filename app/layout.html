@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fake Internship Reporter</title>
+  <meta name="description" content="Is this internship real? Check reports from other students before you apply." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#fdfcfb',
+            ink: '#0e0e0e',
+            ink2: '#2b2b2b',
+            ink3: '#717171',
+            ink4: '#b9b9b9',
+            ink5: '#ecece8',
+            redflag: '#c76b2a',
+            redflagDark: '#8c3c10',
+            ok: '#1a5a3a',
+            okDark: '#113e27',
+            warn: '#a68a1e',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background-color: #fdfcfb; color: #0e0e0e; font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    ::selection { background: #ecece8; color: #0e0e0e; }
+    input, textarea, select { -webkit-appearance: none; appearance: none; }
+  </style>
+</head>
+<body class="min-h-screen">
+  <slot />
+</body>
+</html>

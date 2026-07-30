@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --paper: #fdfcfb;
+  --ink: #0e0e0e;
+  --ink2: #4a4a4a;
+  --ink3: #7a7a7a;
+  --ink4: #a3a3a3;
+  --ink5: #ecece8;
+  --redflag: #c76b2a;
+  --ok: #16a34a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background-color: #fdfcfb;
+  color: #0e0e0e;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #ecece8;
+  color: #0e0e0e;
+}
+
+input, textarea, select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* ponytail: minimal custom input styling, no component library */
+input[type="text"], input[type="email"], input[type="number"], textarea, select {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 1px solid #ecece8;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: #0e0e0e;
+  transition: border-color 0.15s ease;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #0e0e0e;
+}
+input::placeholder, textarea::placeholder {
+  color: #b9b9b9;
+}
