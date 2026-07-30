@@ -1,5 +1,5 @@
 name = "fake-intern"
-main = ".vercel/output/functions/_worker.js"
+main = ".vercel/output/static/_worker.js/index.js"
 compatibility_date = "2025-07-30"
 compatibility_flags = ["nodejs_compat"]
 
