@@ -18,7 +18,9 @@
     "@prisma/engines@5.22.0": true,
     "esbuild@0.15.18": true,
     "esbuild@0.17.19": true,
+    "esbuild@0.14.47": true,
     "sharp@0.33.5": true,
+    "sharp@0.34.5": true,
     "workerd@1.20250718.0": true,
     "prisma@5.22.0": true
   },
